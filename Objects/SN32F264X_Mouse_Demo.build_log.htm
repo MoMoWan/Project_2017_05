@@ -1,0 +1,206 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: s z, s, LIC=W962Z-JAQJB-GNWA5-GWSZG-BWKZ0-B22NA
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.18
+Toolchain Path:  C:\Program Files (x86)\keil\Keil 5.18\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      SNLink\SNLINK.dll V1.0.0.1
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+C:\Slash\work\git_source\Galaxy_Mouse_3325\Project\Galaxy_Mouse_3325.uvprojx
+Project File Date:  09/05/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Program Files (x86)\keil\Keil 5.18\ARM\ARMCC\Bin'
+Build target 'SN32F264X'
+compiling LED_Function.c...
+compiling variables.c...
+compiling main.c...
+..\Source\UserApp\source\main.c(96): warning:  #223-D: function "checkSROM" declared implicitly
+    		    checkSROM(); 
+..\Source\UserApp\source\main.c(68): warning:  #177-D: variable "i" was declared but never referenced
+  	U8 i;
+..\Source\UserApp\source\main.c(138): warning:  #223-D: function "MS_GpioInit" declared implicitly
+  	MS_GpioInit();				// Mouse GPIO Initialization
+..\Source\UserApp\source\main.c(140): warning:  #223-D: function "MS_RamInit" declared implicitly
+  	MS_RamInit();				// Mouse Ram Initialization
+..\Source\UserApp\source\main.c(142): warning:  #223-D: function "LED_Init" declared implicitly
+  	LED_Init();					// LED Initialization 
+..\Source\UserApp\source\main.c(144): warning:  #223-D: function "SPI0_Init" declared implicitly
+  	SPI0_Init();				// SPI0 Initialization
+..\Source\UserApp\source\main.c(146): warning:  #223-D: function "CT16B1_Init" declared implicitly
+  	CT16B1_Init();				// CT16B1(PWM) Initialization 
+..\Source\UserApp\source\main.c(148): warning:  #223-D: function "WDT_Init" declared implicitly
+  	WDT_Init();					// WatchDogTimer Initialization
+..\Source\UserApp\source\main.c: 8 warnings, 0 errors
+compiling LED_RamSetting.c...
+compiling LED.c...
+compiling profile.c...
+..\Source\UserApp\source\profile.c(131): warning:  #223-D: function "setResolution" declared implicitly
+  					setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\profile.c(159): warning:  #223-D: function "setResolution" declared implicitly
+  					setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\profile.c(182): warning:  #223-D: function "setResolution" declared implicitly
+  				setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\profile.c: 3 warnings, 0 errors
+compiling protocol.c...
+..\Source\UserApp\source\protocol.c(214): warning:  #223-D: function "setResolution" declared implicitly
+            setResolution(ramPr.profile[ramPr.ProNO].dpiCur.x,ramPr.profile[ramPr.ProNO].dpiCur.y);
+..\Source\UserApp\source\protocol.c(410): warning:  #223-D: function "setResolution" declared implicitly
+  				setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\protocol.c(459): warning:  #223-D: function "setResolution" declared implicitly
+  					setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\protocol.c(475): warning:  #223-D: function "setResolution" declared implicitly
+  					setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\protocol.c(583): warning:  #223-D: function "setResolution" declared implicitly
+  					setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\protocol.c(603): warning:  #223-D: function "setResolution" declared implicitly
+  					setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\protocol.c(640): warning:  #223-D: function "setResolution" declared implicitly
+  					  setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\protocol.c(651): warning:  #223-D: function "setResolution" declared implicitly
+  						setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\protocol.c(689): warning:  #223-D: function "setResolution" declared implicitly
+           setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\protocol.c: 9 warnings, 0 errors
+compiling keyboard.c...
+compiling mouse.c...
+..\Source\UserApp\source\mouse.c(181): warning:  #223-D: function "updateSensorFirmware" declared implicitly
+    updateSensorFirmware();                                //
+..\Source\UserApp\source\mouse.c(234): warning:  #223-D: function "sensorProgramAPI" declared implicitly
+      sensorProgramAPI();                                   // Give sensor time to update config & displacement
+..\Source\UserApp\source\mouse.c(362): warning:  #223-D: function "SPI_W_2BYTE" declared implicitly
+  SPI_W_2BYTE(0x1b, (U8)x);
+..\Source\UserApp\source\mouse.c(396): warning:  #223-D: function "SPI_W_2BYTE" declared implicitly
+  SPI_W_2BYTE(0x1b, (U8)x);
+..\Source\UserApp\source\mouse.c: 4 warnings, 0 errors
+compiling CT16B1.c...
+compiling LED_Table.c...
+compiling button.c...
+..\Source\UserApp\source\button.c(292): warning:  #223-D: function "setResolution" declared implicitly
+  							 setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\button.c(312): warning:  #223-D: function "setResolution" declared implicitly
+  							 setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\button.c(337): warning:  #223-D: function "setResolution" declared implicitly
+  							 setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\button.c(349): warning:  #223-D: function "setResolution" declared implicitly
+  							 setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\button.c(362): warning:  #223-D: function "setResolution" declared implicitly
+  								 setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\button.c(385): warning:  #223-D: function "setResolution" declared implicitly
+  							 setResolution(dpiCurrent.x,dpiCurrent.y);
+..\Source\UserApp\source\button.c: 6 warnings, 0 errors
+compiling usbdesc.c...
+compiling SPI0.c...
+compiling FlashPrg.c...
+compiling Timer.c...
+compiling usbram.c...
+compiling usbepfunc.c...
+compiling usbhw.c...
+compiling hidram.c...
+compiling usbuser.c...
+compiling hiduser.c...
+compiling Utility.c...
+compiling system_SN32F260.c...
+linking...
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching startup_sn32f260.o(STACK).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching button.o(.bss).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching protocol.o(.bss).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching libspace.o(.bss).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.bss).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching hidram.o(.bss).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching mouse.o(.bss).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.bss).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching button.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.bss).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching mouse.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching keyboard.o(.bss).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching usbram.o(.bss).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching usbram.o(.bss).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching usbram.o(.bss).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching protocol.o(.bss).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching profile.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching usbram.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching main.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching usbram.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching usbram.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching usbram.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching usbram.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching protocol.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching variables.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching led_ramsetting.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching led_ramsetting.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching led_ramsetting.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching led_ramsetting.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching led_ramsetting.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching mouse.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching mouse.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching mouse.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching mouse.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching mouse.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching mouse.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching mouse.o(.data).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching startup_sn32f260.o(HEAP).
+..\Objects\SN32F264X_Mouse_Demo.axf: Error: L6407E: Sections of aggregate size 0x754 bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 51 error messages.
+"..\Objects\SN32F264X_Mouse_Demo.axf" - 51 Error(s), 30 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: SONiX
+                http://liveupdate.sonix.com.tw/sonix/develop_tool/MCU/DFP/SONiX.SN32F2_DFP.1.2.8.pack
+                SONiX::Device:Startup:1.0.3
+                SONiX SN32F2 Series Device Support and Examples
+   * Component: Startup Version: 1.0.3
+
+<h2>Collection of Component include folders:</h2>
+  C:\Slash\work\git_source\Galaxy_Mouse_3325\Project\RTE
+  C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+
+   * Component: SONiX::Device:Startup:1.0.3
+      Source file:   Device\Source\system_SN32F260.c
+      Source file:   Device\Source\ARM\startup_SN32F260.s
+Target not created.
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>
