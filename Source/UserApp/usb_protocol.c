@@ -670,6 +670,8 @@ Returns:
 //    __disable_irq();                                      // Disable interrupts while flashing, take about 12ms to write the eeprom
 //    if (updateOneshot !=0) {__enable_irq();}               // Check updateOneshot flag again, incase that when disableing the irq,then the USB come to change the updateOneshort value.
 //  
+  SN_CT16B1->TC = 0;	   
+  SN_CT16B1->TMRCTRL_b.CEN = 0;	  
 	//Disable WDT
 	//SN_WDT->CFG = 0x5AFA0000;// ??    
     if ((updateStorage & SPECIAL_DATA) != 0) {            // If it is a special variable request, then...
@@ -688,7 +690,7 @@ Returns:
       }
       
     }
-		
+	SN_CT16B1->TMRCTRL_b.CEN = 1;		
 //    if ((updateStorage & USER_LED_DATA) != 0) {            // If it is a generic variable request(For LED matrix data), then...
 //      if (dfu_WriteEEPROM((void*)USER_SETTING_START1, (void *)&user, sizeof(user)) == CMD_SUCCESS) {
 //        updateStorage &= ~USER_LED_DATA;                  // If flash was successful, clear need to update

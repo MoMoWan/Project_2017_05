@@ -31,7 +31,7 @@
 #elif (USB_LIBRARY_TYPE == USB_MOUSE_TYPE)
 	#define	USB_PID	0x7011
 #elif (USB_LIBRARY_TYPE == USB_KB_MOUSE_TYPE2)
-	#define	USB_PID	0x2125//0x7012
+	#define	USB_PID	0x2120//0x7012
 #endif
 
 /*****************************************************************************

@@ -85,13 +85,13 @@ __irq void CT16B1_IRQHandler(void)
 	SN_CT16B1->TC = 0;									//TCÇåÁã
 
 	//RollerLED
-	SN_CT16B1->MR3 = bReload_MR[0];
-	SN_CT16B1->MR4 = bReload_MR[1];
-	SN_CT16B1->MR5 = bReload_MR[2];
+	SN_CT16B1->MR3 = bReload_MR[3];
+	SN_CT16B1->MR4 = bReload_MR[4];
+	SN_CT16B1->MR5 = bReload_MR[5];
 	//DPI LED
-	SN_CT16B1->MR0 = bReload_MR[3];
-	SN_CT16B1->MR1 = bReload_MR[4];
-	SN_CT16B1->MR2 = bReload_MR[5];
+	SN_CT16B1->MR0 = bReload_MR[0];
+	SN_CT16B1->MR1 = bReload_MR[1];
+	SN_CT16B1->MR2 = bReload_MR[2];
 	//Logo LED
 	SN_CT16B1->MR21 = bReload_MR[6];
 	SN_CT16B1->MR22 = bReload_MR[7];

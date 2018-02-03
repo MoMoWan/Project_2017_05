@@ -141,11 +141,11 @@ void MS_RamInit(void)
          break;
        case 0xE5:             // B+F+M 
          pollingChange = 2;
-         ram.profile[0].Sensor.pollingRate = 4;
+         ram.profile[0].Sensor.pollingRate = 2;
          break;
        case 0xE3:             // B+F+R
          pollingChange = 3;
-         ram.profile[0].Sensor.pollingRate = 2;
+         ram.profile[0].Sensor.pollingRate = 4;
          break;
        case 0xA7:             // B+F+D
          pollingChange = 4;

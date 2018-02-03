@@ -297,7 +297,7 @@ ARM Macro Assembler    Page 5
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
 ork --depend=.\objects\startup_sn32f240b.d -o.\objects\startup_sn32f240b.o -IC:
-\Slash\work\git_source\Galaxy_Mouse_3360\RTE -I"C:\Program Files (x86)\keil\Kei
+\Slash\work\git_source\Galaxy_Mouse_3389\RTE -I"C:\Program Files (x86)\keil\Kei
 l 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include" -I"C:\Program Files (x86)\keil\K
 eil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include" --predefine="__UVISION
 _VERSION SETA 518" --predefine="_RTE_ SETA 1" --predefine="SN32F240B SETA 1" --

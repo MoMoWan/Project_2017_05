@@ -50,7 +50,7 @@ U8 blinkCount = 0;
 #if BASIC_FW
 const U8 firmwareVersion[4]  = {0,00,0,0};                // Basic Firmware v0.00.00.00
 #else
-const U8 firmwareVersion[4]  = {0,1,0,0};                 // Firmware version 
+const U8 firmwareVersion[4]  = {0,2,0,0};                 // Firmware version 
 #endif
 
 STORAGE1 sys;                                             // Variables filled from dft_special table

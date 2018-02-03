@@ -31,10 +31,10 @@
 
 //WHEEL IO Define P23¡¢P24
 #define MS_WHEEL_PM_0 			SN_GPIO2
-	#define mskMS_WHEEL_IO_PM_A 		BIT_3
-	#define mskMS_WHEEL_IO_PM_B 		BIT_4
-	#define MS_WHEEL_IO_PM_A_N 				3
-	#define MS_WHEEL_IO_PM_B_N 				4
+	#define mskMS_WHEEL_IO_PM_A 		BIT_4
+	#define mskMS_WHEEL_IO_PM_B 		BIT_3
+	#define MS_WHEEL_IO_PM_A_N 				4
+	#define MS_WHEEL_IO_PM_B_N 				3
 
 //WHEEL IO Pullup Enable 	
 #define	__MS_WHEEL_IO_A_SETPUR			MS_WHEEL_PM_0->CFG &= ~MS_WHEEL_IO_SETPUR_A_MASK;

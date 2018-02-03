@@ -37,4 +37,5 @@ void LED_SettingDefaultColor(void);
 
 void LED_ReflashPWMDuty(void);
 
+void decode_DPI_Stage(void);
 #endif //__LED_H__

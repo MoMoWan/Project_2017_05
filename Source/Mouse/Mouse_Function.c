@@ -4,14 +4,14 @@
 #include 	"Mouse_Const.h"
 #include 	"Mouse_Table.h"
 #include 	"Mouse_IOSetting.h"
-
+#include 	"Mouse_Sensor.h"
 #include 	"LED_Function.h"
 #include 	"SPI.h"
 #include 	"CT16B1.h"
 #include 	"CT16B0.h"
 #include 	"Utility.h"
 #include 	"variables.h"
-
+#include 	"LED.h"
 /*_____ D E C L A R A T I O N S ____________________________________________*/
 
 /*_____ D E F I N I T I O N S ______________________________________________*/
@@ -38,7 +38,11 @@ void MS_SensorDPISetting_by_SPI(void)
   SPI_W_2BYTE(SENSOR_RESOLUTION_3325, (ram.profile[0].Sensor.stageDPI[ram.profile[0].Sensor.dpiStage].x/40));
 #else
 //	SPI_W_2BYTE(SENSOR_CONFIG1_3360, tabSensor_DPI[bMSDPI_Index]);
-  SPI_W_2BYTE(SENSOR_CONFIG1_3360, (ram.profile[0].Sensor.stageDPI[ram.profile[0].Sensor.dpiStage].x/40));
+//  SPI_W_2BYTE(SENSOR_CONFIG1_3360, (ram.profile[0].Sensor.stageDPI[ram.profile[0].Sensor.dpiStage].x/40));
+  ram.profile[ram.ProNO].dpiCur.x = ram.profile[0].Sensor.stageDPI[ram.profile[0].Sensor.dpiStage].x;
+  ram.profile[ram.ProNO].dpiCur.y = ram.profile[0].Sensor.stageDPI[ram.profile[0].Sensor.dpiStage].y;
+  setResolution(ram.profile[ram.ProNO].dpiCur.x,ram.profile[ram.ProNO].dpiCur.y);
+  decode_DPI_Stage();
 #endif	
 }
 

@@ -108,7 +108,7 @@ void LED_Mode_ReInit(void)
 		rPWM_Buf[i] = 0x0;
 	}
 	dbMS_LED_ReflashTimeFrame = 0;
-	
+	decode_DPI_Stage();
 	switch(bLED_Mode)
 	{
 		case S_LED_MODE_BREATH:
@@ -133,7 +133,46 @@ void LED_Mode_ReInit(void)
 			break;
 	}
 }
-
+/*****************************************************************************
+* Function		: LED_Mode_Breath_Init
+* Description	: LED_Mode_Breath_Init
+* Input			: None
+* Output		: None		
+* Return		: None
+* Note			: None
+*****************************************************************************/
+void decode_DPI_Stage(void)
+{
+   switch (ram.profile[0].Sensor.dpiStage) {
+     case 0 :
+		    bReload_MR[0] = 0xFF;
+		    bReload_MR[1] = 0;
+		    bReload_MR[2] = 0;       
+     break;
+     case 1 :
+		    bReload_MR[0] = 0xFF;
+		    bReload_MR[1] = 0xFF;
+		    bReload_MR[2] = 0;          
+     break; 
+     case 2 :
+		    bReload_MR[0] = 0;
+		    bReload_MR[1] = 0xFF;
+		    bReload_MR[2] = 0;          
+     break; 
+     case 3 :
+		    bReload_MR[0] = 0;
+		    bReload_MR[1] = 0xFF;
+		    bReload_MR[2] = 0xFF;          
+     break; 
+     case 4 :
+		    bReload_MR[0] = 0;
+		    bReload_MR[1] = 0;
+		    bReload_MR[2] = 0xFF;          
+     break;  
+     default :        
+     break;      
+   }
+}
 /*****************************************************************************
 * Function		: LED_Mode_Breath_Init
 * Description	: LED_Mode_Breath_Init
@@ -195,7 +234,7 @@ void LED_Effect_Breath(void)
     structLED_BreathEffect.bBlue = ram.profile[0].led.color.B;
   }
   
-	for(i=0;i<6;i++)
+	for(i=1;i<6;i++)
 	{
 		rPWM_Buf[i] = rPWM_Value;
 		gPWM_Buf[i] = gPWM_Value;
@@ -255,7 +294,7 @@ void LED_Mode_Spectrum(void)
 			return;
 	}
 	
-	for(i=0;i<6;i++)
+	for(i=1;i<6;i++)
 	{
 		rPWM_Buf[i] = rPWM_Value;
 		gPWM_Buf[i] = gPWM_Value;
@@ -384,7 +423,7 @@ void LED_Mode_Reaction(void)
 		}				
 	}	
 
-	for(i=0;i<6;i++)
+	for(i=1;i<6;i++)
 {
 		rPWM_Buf[i] = rPWM_Value;
 		gPWM_Buf[i] = gPWM_Value;
@@ -523,7 +562,7 @@ void LED_Mode_Blink(void)
 void LED_PWMBuf_Update(uint8_t rpwm_buf,uint8_t gpwm_buf,uint8_t bpwm_buf)
 {
 	uint8_t i;
-	for(i=0;i<6;i++)
+	for(i=1;i<6;i++)
 	{
 		rPWM_Buf[i] = rpwm_buf;
 		gPWM_Buf[i] = gpwm_buf;
@@ -558,7 +597,7 @@ void LED_SettingDefaultColor(void)
 void LED_ReflashPWMDuty(void)
 {
 	uint8_t i;
-	for(i=0;i<6;i++)
+	for(i=1;i<6;i++)
 	{
 		bReload_MR[i*3] = rPWM_Buf[i] * LED_LIGHT_PARAM[bLED_Light_Param] / LIGHT_PARAM;	
 		bReload_MR[i*3+1] = gPWM_Buf[i] * LED_LIGHT_PARAM[bLED_Light_Param] / LIGHT_PARAM;	
