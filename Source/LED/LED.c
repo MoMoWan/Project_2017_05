@@ -473,7 +473,7 @@ void LED_Mode_Wave(void)
 *****************************************************************************/
 void LED_Mode_Static_Init(void)
 {
-	bLED_DataRefreshTime_Reload = STATIC_REFRESH_TIME;
+	bLED_DataRefreshTime_Reload = ram.profile[0].led.speed;//STATIC_REFRESH_TIME;
 }
 /*****************************************************************************
 * Function		: LED_Mode_Blink_Init
@@ -529,10 +529,10 @@ void LED_Mode_Blink(void)
         LED_PWMBuf_Update(0xFF,0,0);			// red 
         break;
       case 2:
-        LED_PWMBuf_Update(0,0xFF,0);			// green
+        LED_PWMBuf_Update(0,0,0xFF);			// blue
         break;
       case 3:
-        LED_PWMBuf_Update(0,0,0xFF);			// blue
+        LED_PWMBuf_Update(0,0xFF,0);			// green
         break;
       case 4:
         LED_PWMBuf_Update(0xFF,0xFF,0xFF);			// White
@@ -599,9 +599,9 @@ void LED_ReflashPWMDuty(void)
 	uint8_t i;
 	for(i=1;i<6;i++)
 	{
-		bReload_MR[i*3] = rPWM_Buf[i] * LED_LIGHT_PARAM[bLED_Light_Param] / LIGHT_PARAM;	
-		bReload_MR[i*3+1] = gPWM_Buf[i] * LED_LIGHT_PARAM[bLED_Light_Param] / LIGHT_PARAM;	
-		bReload_MR[i*3+2] = bPWM_Buf[i] * LED_LIGHT_PARAM[bLED_Light_Param] / LIGHT_PARAM;	
+		bReload_MR[i*3]   = rPWM_Buf[i] * ram.profile[0].led.bright / 255;
+		bReload_MR[i*3+1] = gPWM_Buf[i] * ram.profile[0].led.bright / 255;
+		bReload_MR[i*3+2] = bPWM_Buf[i] * ram.profile[0].led.bright / 255;
 	}
 }
 

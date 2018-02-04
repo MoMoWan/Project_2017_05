@@ -461,7 +461,7 @@ const uint8_t USB_ProductStringDescriptor[] = {
 	' ',0,
 	'P',0,
 	'r',0,
-	'0',0,
+	'o',0,
 	' ',0,  
 	'G',0,
 	'a',0,
