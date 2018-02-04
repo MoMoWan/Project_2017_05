@@ -40,7 +40,7 @@ U8  protocolTransmit[PROTOCOL_DATA_SIZE] = {0};           // 8 bytes command + 8
 U8 pollingTimer = 0;
 S16 sensor_X = 0;
 S16 sensor_Y = 0;
-
+CPI_PARM dpiCurrent;
 U8 pollingChange = 0;
 U8 blinkCount = 0;
 //const U32 fw_signature __attribute__((at(SIGNATURE_ADDR))) = STD_SIGNATURE;
@@ -50,7 +50,7 @@ U8 blinkCount = 0;
 #if BASIC_FW
 const U8 firmwareVersion[4]  = {0,00,0,0};                // Basic Firmware v0.00.00.00
 #else
-const U8 firmwareVersion[4]  = {0,2,0,0};                 // Firmware version 
+const U8 firmwareVersion[4]  = {0,3,0,0};                 // Firmware version 
 #endif
 
 STORAGE1 sys;                                             // Variables filled from dft_special table
@@ -91,14 +91,15 @@ const STORAGE2 dft_generic1 = {
                                       0xFF, //G 
                                       0xFF, //B
                                      },
-                                     0,     // speed 
+                                     55,     // speed  55/10s  44/8s 28/5s 17/3s 3/1s
                                      0xFF,  // bright
                                    },
                                    {1600,1600}, // DPI
                                    { 
                                      1,           //polling rate
                                      5,         // max stage
-                                     3,         // DPI stage
+                                     2,         // DPI stage
+                                     0,         // angle snap disable
                                      {
                                       {400,400},
                                       {800,800},
@@ -117,14 +118,15 @@ const STORAGE2 dft_generic1 = {
                                       0xFF, //G 
                                       0xFF, //B
                                      },
-                                     0,     // speed 
+                                     55,     // speed  55/10s  44/8s 28/5s 17/3s 3/1s
                                      0xFF,  // bright
                                    },
                                    {1600,1600}, // DPI
                                    { 
                                      1,           //polling rate
                                      5,         // max stage
-                                     3,         // DPI stage
+                                     2,         // DPI stage
+                                     0,         // angle snap disable
                                      {
                                       {400,400},
                                       {800,800},
@@ -143,14 +145,15 @@ const STORAGE2 dft_generic1 = {
                                       0xFF, //G 
                                       0xFF, //B
                                      },
-                                     0,     // speed 
+                                     55,     // speed  55/10s  44/8s 28/5s 17/3s 3/1s
                                      0xFF,  // bright
                                    },
                                    {1600,1600}, // DPI
                                    { 
                                      1,           //polling rate
                                      5,         // max stage
-                                     3,         // DPI stage
+                                     2,         // DPI stage
+                                     0,         // angle snap disable
                                      {
                                       {400,400},
                                       {800,800},
@@ -169,14 +172,15 @@ const STORAGE2 dft_generic1 = {
                                       0xFF, //G 
                                       0xFF, //B
                                      },
-                                     0,     // speed 
+                                     55,     // speed  55/10s  44/8s 28/5s 17/3s 3/1s
                                      0xFF,  // bright
                                    },
                                    {1600,1600}, // DPI
                                    { 
                                      1,           //polling rate
                                      5,         // max stage
-                                     3,         // DPI stage
+                                     2,         // DPI stage
+                                     0,         // angle snap disable
                                      {
                                       {400,400},
                                       {800,800},
@@ -195,14 +199,15 @@ const STORAGE2 dft_generic1 = {
                                       0xFF, //G 
                                       0xFF, //B
                                      },
-                                     0,     // speed 
+                                     55,     // speed  55/10s  44/8s 28/5s 17/3s 3/1s
                                      0xFF,  // bright
                                    },
                                    {1600,1600}, // DPI
                                    { 
                                      1,           //polling rate
                                      5,         // max stage
-                                     3,         // DPI stage
+                                     2,         // DPI stage
+                                     0,         // angle snap disable
                                      {
                                       {400,400},
                                       {800,800},
@@ -405,5 +410,8 @@ const STORAGE2 dft_generic1 = {
 															 };                        
 
 
+
+const U8 dpiTable[] = { 0x04,0x06,0x08,0x0B,0x0D,0x0F,0x12,0x14,0x16,0x19,0x1B,0x1D,0x20,0x22,0x24,0x27,0x29,0x2B,0x2E,0x30,0x32,0x34,0x37,0x39,0x3B,0x3E,0x40,0x42,0x45,0x47,
+                        0x49,0x4C,0x4E,0x50,0x53,0x55,0x57,0x5A,0x5C,0x5E,0x61,0x63,0x65,0x68,0x6A,0x6C,0x6F,0x71,0x73,};
 
 

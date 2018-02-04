@@ -57,6 +57,7 @@ typedef __packed struct _SENSOR_PARM {           // Totoal 19 bytes
  U8  pollingRate;                                        // Device polling rate (ms)
  U8  maxStages;                                          // Max stages of the dpi
  U8  dpiStage;                                           // DPI stages on Mouse
+ U8  angleSnap; 
  CPI_PARM stageDPI[NUMBER_OF_STAGES];                    // DPI stages value
 } SENSOR_PARM;
 
@@ -155,6 +156,8 @@ extern U8  usbReceiveFlag;
 extern U8  protocolTransmit[PROTOCOL_DATA_SIZE];
 extern const U8 firmwareVersion[4];
 
+extern const U8 dpiTable[];
+extern CPI_PARM dpiCurrent;
 
 extern STORAGE1 sys;
 extern STORAGE2 ram;

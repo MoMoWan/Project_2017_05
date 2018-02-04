@@ -1,5 +1,5 @@
 Dependencies for Project 'Galaxy_Mouse', Target 'Mouse': (DO NOT MODIFY !)
-F (.\Source\Driver\CT16B1.c)(0x5A753BEF)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Source\Driver -I .\Source\UserApp -I .\Source\LED -I .\Source\Mouse -I .\Source\Utility -I .\Source\Usb -I .\Source\UsbHid-I C:\Slash\work\git_source\Galaxy_Mouse_3389\RTE-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include"-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include"-D__UVISION_VERSION="518" -D_RTE_ -DSN32F240B-o .\objects\ct16b1.o --omf_browse .\objects\ct16b1.crf --depend .\objects\ct16b1.d)
+F (.\Source\Driver\CT16B1.c)(0x5A76F211)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Source\Driver -I .\Source\UserApp -I .\Source\LED -I .\Source\Mouse -I .\Source\Utility -I .\Source\Usb -I .\Source\UsbHid-I C:\Slash\work\git_source\Galaxy_Mouse_3389\RTE-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include"-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include"-D__UVISION_VERSION="518" -D_RTE_ -DSN32F240B-o .\objects\ct16b1.o --omf_browse .\objects\ct16b1.crf --depend .\objects\ct16b1.d)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include\SN32F240B.h)(0x596F1BEE)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm0.h)(0x59840DC6)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
@@ -63,7 +63,7 @@ I (Source\LED\LED_Const.h)(0x5A2F9649)
 I (Source\LED\LED_Table.h)(0x5A2F8F8E)
 I (.\Source\Mouse\Mouse_RamSetting.h)(0x5A2F8B22)
 I (.\Source\Mouse\Mouse_Const.h)(0x5A2F8C39)
-I (.\Source\UserApp\variables.h)(0x5A2E99C9)
+I (.\Source\UserApp\variables.h)(0x5A76EEA8)
 I (.\Source\UserApp\usb_protocol.h)(0x5A2E99C9)
 I (.\Source\UserApp\main.h)(0x5A2FB726)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include\SN32F200_Def.h)(0x5331864C)
@@ -118,7 +118,7 @@ I (.\Source\LED\LED.h)(0x5A753A21)
 I (.\Source\LED\LED_RamSetting.h)(0x5A2F923D)
 I (.\Source\LED\LED_Function.h)(0x5A2F85EA)
 I (.\Source\Driver\CT16B1.h)(0x5A2F84EC)
-I (.\Source\UserApp\variables.h)(0x5A2E99C9)
+I (.\Source\UserApp\variables.h)(0x5A76EEA8)
 I (.\Source\UserApp\usb_protocol.h)(0x5A2E99C9)
 I (.\Source\UserApp\main.h)(0x5A2FB726)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include\SN32F200_Def.h)(0x5331864C)
@@ -143,7 +143,7 @@ I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\
 I (.\Source\LED\LED_RamSetting.h)(0x5A2F923D)
 I (.\Source\LED\LED_Const.h)(0x5A2F9649)
 I (.\Source\Driver\CT16B0.h)(0x5A1E6426)
-I (.\Source\UserApp\variables.h)(0x5A2E99C9)
+I (.\Source\UserApp\variables.h)(0x5A76EEA8)
 I (.\Source\UserApp\usb_protocol.h)(0x5A2E99C9)
 F (.\Source\Mouse\Mouse_Function.c)(0x5A753A6A)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Source\Driver -I .\Source\UserApp -I .\Source\LED -I .\Source\Mouse -I .\Source\Utility -I .\Source\Usb -I .\Source\UsbHid-I C:\Slash\work\git_source\Galaxy_Mouse_3389\RTE-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include"-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include"-D__UVISION_VERSION="518" -D_RTE_ -DSN32F240B-o .\objects\mouse_function.o --omf_browse .\objects\mouse_function.crf --depend .\objects\mouse_function.d)
 I (Source\Mouse\Mouse_Function.h)(0x5A2FAE0E)
@@ -166,7 +166,7 @@ I (.\Source\Driver\SPI.h)(0x5A314551)
 I (.\Source\Driver\CT16B1.h)(0x5A2F84EC)
 I (.\Source\Driver\CT16B0.h)(0x5A1E6426)
 I (.\Source\Utility\Utility.h)(0x5A3140CB)
-I (.\Source\UserApp\variables.h)(0x5A2E99C9)
+I (.\Source\UserApp\variables.h)(0x5A76EEA8)
 I (.\Source\UserApp\usb_protocol.h)(0x5A2E99C9)
 I (.\Source\LED\LED.h)(0x5A753A21)
 F (.\Source\Mouse\Mouse_RamSetting.c)(0x5A2E99C9)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Source\Driver -I .\Source\UserApp -I .\Source\LED -I .\Source\Mouse -I .\Source\Utility -I .\Source\Usb -I .\Source\UsbHid-I C:\Slash\work\git_source\Galaxy_Mouse_3389\RTE-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include"-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include"-D__UVISION_VERSION="518" -D_RTE_ -DSN32F240B-o .\objects\mouse_ramsetting.o --omf_browse .\objects\mouse_ramsetting.crf --depend .\objects\mouse_ramsetting.d)
@@ -217,7 +217,7 @@ I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_armcc.h)(0x59840DC6)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include\system_SN32F240B.h)(0x595F6228)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include\SN32F200_Def.h)(0x5331864C)
-I (.\Source\UserApp\variables.h)(0x5A2E99C9)
+I (.\Source\UserApp\variables.h)(0x5A76EEA8)
 I (.\Source\UserApp\usb_protocol.h)(0x5A2E99C9)
 I (.\Source\UserApp\main.h)(0x5A2FB726)
 I (.\Source\Driver\SPI.h)(0x5A314551)
@@ -245,7 +245,7 @@ I (Source\Mouse\Mouse_KeyCode.h)(0x5A2F8B39)
 I (Source\Mouse\Mouse_Table.h)(0x5A2F8A6F)
 I (.\Source\LED\LED_RamSetting.h)(0x5A2F923D)
 I (.\Source\LED\LED_Const.h)(0x5A2F9649)
-I (.\Source\UserApp\variables.h)(0x5A2E99C9)
+I (.\Source\UserApp\variables.h)(0x5A76EEA8)
 I (.\Source\UserApp\usb_protocol.h)(0x5A2E99C9)
 I (.\Source\UserApp\main.h)(0x5A2FB726)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include\SN32F200_Def.h)(0x5331864C)
@@ -344,7 +344,7 @@ I (.\Source\UsbHid\hid.h)(0x5A2E99C9)
 I (.\Source\UsbHid\hidram.h)(0x5A2F880E)
 I (.\Source\UserApp\usb_protocol.h)(0x5A2E99C9)
 I (.\Source\UserApp\main.h)(0x5A2FB726)
-I (.\Source\UserApp\variables.h)(0x5A2E99C9)
+I (.\Source\UserApp\variables.h)(0x5A76EEA8)
 F (.\Source\UsbHid\hidram.c)(0x5A2F8819)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Source\Driver -I .\Source\UserApp -I .\Source\LED -I .\Source\Mouse -I .\Source\Utility -I .\Source\Usb -I .\Source\UsbHid-I C:\Slash\work\git_source\Galaxy_Mouse_3389\RTE-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include"-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include"-D__UVISION_VERSION="518" -D_RTE_ -DSN32F240B-o .\objects\hidram.o --omf_browse .\objects\hidram.crf --depend .\objects\hidram.d)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include\SN32F240B.h)(0x596F1BEE)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm0.h)(0x59840DC6)
@@ -373,7 +373,7 @@ I (.\Source\Usb\usbhw.h)(0x5A2F89AE)
 I (.\Source\Usb\usbram.h)(0x5A2F8972)
 I (.\Source\Usb\usbuser.h)(0x5A2E99C9)
 I (.\Source\Usb\usbdesc.h)(0x5A7534D5)
-I (.\Source\UserApp\variables.h)(0x5A2E99C9)
+I (.\Source\UserApp\variables.h)(0x5A76EEA8)
 I (.\Source\UserApp\usb_protocol.h)(0x5A2E99C9)
 I (.\Source\UserApp\main.h)(0x5A2FB726)
 F (.\Source\UserApp\main.c)(0x5A2F8E2C)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Source\Driver -I .\Source\UserApp -I .\Source\LED -I .\Source\Mouse -I .\Source\Utility -I .\Source\Usb -I .\Source\UsbHid-I C:\Slash\work\git_source\Galaxy_Mouse_3389\RTE-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include"-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include"-D__UVISION_VERSION="518" -D_RTE_ -DSN32F240B-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
@@ -399,7 +399,7 @@ I (.\Source\Mouse\Boot_Idle_State.h)(0x5A2E99C9)
 I (.\Source\LED\LED.h)(0x5A753A21)
 I (.\Source\Driver\CT16B1.h)(0x5A2F84EC)
 I (.\Source\Driver\SPI.h)(0x5A314551)
-F (.\Source\UserApp\variables.c)(0x5A753E02)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Source\Driver -I .\Source\UserApp -I .\Source\LED -I .\Source\Mouse -I .\Source\Utility -I .\Source\Usb -I .\Source\UsbHid-I C:\Slash\work\git_source\Galaxy_Mouse_3389\RTE-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include"-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include"-D__UVISION_VERSION="518" -D_RTE_ -DSN32F240B-o .\objects\variables.o --omf_browse .\objects\variables.crf --depend .\objects\variables.d)
+F (.\Source\UserApp\variables.c)(0x5A76F093)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Source\Driver -I .\Source\UserApp -I .\Source\LED -I .\Source\Mouse -I .\Source\Utility -I .\Source\Usb -I .\Source\UsbHid-I C:\Slash\work\git_source\Galaxy_Mouse_3389\RTE-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include"-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include"-D__UVISION_VERSION="518" -D_RTE_ -DSN32F240B-o .\objects\variables.o --omf_browse .\objects\variables.crf --depend .\objects\variables.d)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include\SN32F240B.h)(0x596F1BEE)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm0.h)(0x59840DC6)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
@@ -407,12 +407,12 @@ I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_compiler.h)(0x59840DC6)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_armcc.h)(0x59840DC6)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include\system_SN32F240B.h)(0x595F6228)
-I (Source\UserApp\variables.h)(0x5A2E99C9)
+I (Source\UserApp\variables.h)(0x5A76EEA8)
 I (Source\UserApp\usb_protocol.h)(0x5A2E99C9)
 I (Source\UserApp\main.h)(0x5A2FB726)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include\SN32F200_Def.h)(0x5331864C)
 I (Source\UserApp\Type.h)(0x5A2F9723)
-F (.\Source\UserApp\usb_protocol.c)(0x5A753DEC)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Source\Driver -I .\Source\UserApp -I .\Source\LED -I .\Source\Mouse -I .\Source\Utility -I .\Source\Usb -I .\Source\UsbHid-I C:\Slash\work\git_source\Galaxy_Mouse_3389\RTE-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include"-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include"-D__UVISION_VERSION="518" -D_RTE_ -DSN32F240B-o .\objects\usb_protocol.o --omf_browse .\objects\usb_protocol.crf --depend .\objects\usb_protocol.d)
+F (.\Source\UserApp\usb_protocol.c)(0x5A76F595)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Source\Driver -I .\Source\UserApp -I .\Source\LED -I .\Source\Mouse -I .\Source\Utility -I .\Source\Usb -I .\Source\UsbHid-I C:\Slash\work\git_source\Galaxy_Mouse_3389\RTE-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include"-I "C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include"-D__UVISION_VERSION="518" -D_RTE_ -DSN32F240B-o .\objects\usb_protocol.o --omf_browse .\objects\usb_protocol.crf --depend .\objects\usb_protocol.d)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include\SN32F240B.h)(0x596F1BEE)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm0.h)(0x59840DC6)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
@@ -422,7 +422,7 @@ I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include\system_SN32F240B.h)(0x595F6228)
 I (Source\UserApp\main.h)(0x5A2FB726)
 I (C:\Program Files (x86)\keil\Keil 5.18\ARM\PACK\SONiX\SN32F2_DFP\1.2.8\Device\Include\SN32F200_Def.h)(0x5331864C)
-I (Source\UserApp\variables.h)(0x5A2E99C9)
+I (Source\UserApp\variables.h)(0x5A76EEA8)
 I (Source\UserApp\usb_protocol.h)(0x5A2E99C9)
 I (.\Source\Driver\FlashPrg.h)(0x5A2F9042)
 I (.\Source\LED\LED_RamSetting.h)(0x5A2F923D)

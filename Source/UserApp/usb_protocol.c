@@ -666,24 +666,38 @@ Returns:
 
 --*/
 {
+  U16 len =0; 
   if ((updateStorage != 0) && (updateOneshot == 0)) {     // If variable storage need updating, then...
 //    __disable_irq();                                      // Disable interrupts while flashing, take about 12ms to write the eeprom
 //    if (updateOneshot !=0) {__enable_irq();}               // Check updateOneshot flag again, incase that when disableing the irq,then the USB come to change the updateOneshort value.
 //  
   SN_CT16B1->TC = 0;	   
-  SN_CT16B1->TMRCTRL_b.CEN = 0;	  
+  SN_CT16B1->TMRCTRL_b.CEN = 0;
+  SN_CT16B1->IC =0x0ffffffff;	  
 	//Disable WDT
 	//SN_WDT->CFG = 0x5AFA0000;// ??    
     if ((updateStorage & SPECIAL_DATA) != 0) {            // If it is a special variable request, then...
       sys.crc = crc16((U8 *)&sys, sizeof(sys)-2);
-      if (FLASH_Program(MANUFACTURING_SATRT,sizeof(sys), (void *)&sys) == 0) {
+      sys.cont.storageSize = sizeof(sys);
+      if ((sys.cont.storageSize%4) == 0) {
+        len = sys.cont.storageSize/4;
+      } else {
+        len = (sys.cont.storageSize/4)+1;
+      }
+      if (FLASH_Program(MANUFACTURING_SATRT,len, (void *)&sys) == 0) {
         updateStorage &= ~SPECIAL_DATA;                   // If flash was successful, clear need to update        
 //        updateStorage &= ~CRC_DATA;
       }
     }
     if ((updateStorage & GENERIC_DATA) != 0) {            // If it is a generic variable request, then...
       ram.crc = crc16((U8 *)&ram, sizeof(ram)-2);
-      if (FLASH_Program(USER_SETTING_START, (sizeof(ram)/4),(U32 *)&ram ) == 0) {
+      ram.storageSize = sizeof(ram);
+       if ((ram.storageSize%4) == 0) {
+        len = ram.storageSize/4;
+      } else {
+        len = (ram.storageSize/4)+1;
+      }     
+      if (FLASH_Program(USER_SETTING_START, len,(U32 *)&ram ) == 0) {
         updateStorage &= ~GENERIC_DATA;                   // If flash was successful, clear need to update
  //       crc.ram = crc16((U8 *)&ram, sizeof(ram));
  //       updateStorage |= CRC_DATA;

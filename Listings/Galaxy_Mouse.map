@@ -1005,37 +1005,37 @@ Image Symbol Table
     i.processLedCommand                      0x00003d74   Section        0  usb_protocol.o(i.processLedCommand)
     i.processPendingCommand                  0x00003e34   Section        0  usb_protocol.o(i.processPendingCommand)
     i.processVariableUpdate                  0x00003e88   Section        0  usb_protocol.o(i.processVariableUpdate)
-    i.requestVariableUpdate                  0x00003f40   Section        0  usb_protocol.o(i.requestVariableUpdate)
-    i.sensorPowerUp                          0x00003f98   Section        0  avago_api.o(i.sensorPowerUp)
-    i.setResolution                          0x00004000   Section        0  mouse_sensor.o(i.setResolution)
-    i.spiChecksum_SROM                       0x00004054   Section        0  avago_api.o(i.spiChecksum_SROM)
-    i.spiDownload_SROM                       0x000040f8   Section        0  avago_api.o(i.spiDownload_SROM)
-    i.updateSensorFirmware                   0x0000413c   Section        0  avago_api.o(i.updateSensorFirmware)
-    .constdata                               0x000041a4   Section      160  led.o(.constdata)
-    .constdata                               0x00004244   Section      202  led_table.o(.constdata)
-    .constdata                               0x0000430e   Section       84  mouse_table.o(.constdata)
-    .constdata                               0x00004362   Section     4094  avago_api.o(.constdata)
-    .constdata                               0x00005360   Section      768  usbdesc.o(.constdata)
-    .constdata                               0x00005660   Section      230  variables.o(.constdata)
+    i.requestVariableUpdate                  0x00003ff0   Section        0  usb_protocol.o(i.requestVariableUpdate)
+    i.sensorPowerUp                          0x00004048   Section        0  avago_api.o(i.sensorPowerUp)
+    i.setResolution                          0x000040b0   Section        0  mouse_sensor.o(i.setResolution)
+    i.spiChecksum_SROM                       0x00004104   Section        0  avago_api.o(i.spiChecksum_SROM)
+    i.spiDownload_SROM                       0x000041a8   Section        0  avago_api.o(i.spiDownload_SROM)
+    i.updateSensorFirmware                   0x000041ec   Section        0  avago_api.o(i.updateSensorFirmware)
+    .constdata                               0x00004254   Section      160  led.o(.constdata)
+    .constdata                               0x000042f4   Section      202  led_table.o(.constdata)
+    .constdata                               0x000043be   Section       84  mouse_table.o(.constdata)
+    .constdata                               0x00004412   Section     4094  avago_api.o(.constdata)
+    .constdata                               0x00005410   Section      768  usbdesc.o(.constdata)
+    .constdata                               0x00005710   Section      284  variables.o(.constdata)
     .ARM.__at_0x0000FFFC                     0x0000fffc   Section        4  startup_sn32f240b.o(.ARM.__at_0x0000FFFC)
     .data                                    0x20000000   Section       76  led_ramsetting.o(.data)
     .data                                    0x2000004c   Section       65  mouse_ramsetting.o(.data)
     .data                                    0x20000090   Section       22  avago_api.o(.data)
     .data                                    0x200000a8   Section       56  usbram.o(.data)
     .data                                    0x200000e0   Section        1  hidram.o(.data)
-    .data                                    0x200000e2   Section       20  variables.o(.data)
-    .data                                    0x200000f8   Section        4  system_sn32f240b.o(.data)
-    .bss                                     0x200000fc   Section      106  led_ramsetting.o(.bss)
-    .bss                                     0x20000166   Section       12  mouse_ramsetting.o(.bss)
-    .bss                                     0x20000174   Section       56  usbram.o(.bss)
-    .bss                                     0x200001ac   Section       88  hidram.o(.bss)
-    .bss                                     0x20000204   Section      272  variables.o(.bss)
-    .bss                                     0x20000314   Section       96  libspace.o(.bss)
-    HEAP                                     0x20000378   Section        0  startup_sn32f240b.o(HEAP)
-    STACK                                    0x20000378   Section      512  startup_sn32f240b.o(STACK)
-    Heap_Mem                                 0x20000378   Data           0  startup_sn32f240b.o(HEAP)
-    Stack_Mem                                0x20000378   Data         512  startup_sn32f240b.o(STACK)
-    __initial_sp                             0x20000578   Data           0  startup_sn32f240b.o(STACK)
+    .data                                    0x200000e2   Section       24  variables.o(.data)
+    .data                                    0x200000fc   Section        4  system_sn32f240b.o(.data)
+    .bss                                     0x20000100   Section      106  led_ramsetting.o(.bss)
+    .bss                                     0x2000016a   Section       12  mouse_ramsetting.o(.bss)
+    .bss                                     0x20000178   Section       56  usbram.o(.bss)
+    .bss                                     0x200001b0   Section       88  hidram.o(.bss)
+    .bss                                     0x20000208   Section      277  variables.o(.bss)
+    .bss                                     0x20000320   Section       96  libspace.o(.bss)
+    HEAP                                     0x20000380   Section        0  startup_sn32f240b.o(HEAP)
+    STACK                                    0x20000380   Section      512  startup_sn32f240b.o(STACK)
+    Heap_Mem                                 0x20000380   Data           0  startup_sn32f240b.o(HEAP)
+    Stack_Mem                                0x20000380   Data         512  startup_sn32f240b.o(STACK)
+    __initial_sp                             0x20000580   Data           0  startup_sn32f240b.o(STACK)
 
     Global Symbols
 
@@ -1299,39 +1299,40 @@ Image Symbol Table
     processDeviceInfoCommand                 0x00003a9d   Thumb Code   712  usb_protocol.o(i.processDeviceInfoCommand)
     processLedCommand                        0x00003d75   Thumb Code   164  usb_protocol.o(i.processLedCommand)
     processPendingCommand                    0x00003e35   Thumb Code    74  usb_protocol.o(i.processPendingCommand)
-    processVariableUpdate                    0x00003e89   Thumb Code   160  usb_protocol.o(i.processVariableUpdate)
-    requestVariableUpdate                    0x00003f41   Thumb Code    80  usb_protocol.o(i.requestVariableUpdate)
-    sensorPowerUp                            0x00003f99   Thumb Code    90  avago_api.o(i.sensorPowerUp)
-    setResolution                            0x00004001   Thumb Code    84  mouse_sensor.o(i.setResolution)
-    spiChecksum_SROM                         0x00004055   Thumb Code   150  avago_api.o(i.spiChecksum_SROM)
-    spiDownload_SROM                         0x000040f9   Thumb Code    58  avago_api.o(i.spiDownload_SROM)
-    updateSensorFirmware                     0x0000413d   Thumb Code    92  avago_api.o(i.updateSensorFirmware)
-    RandomColor                              0x00004244   Data          64  led_table.o(.constdata)
-    LED_BREATH_TABLE                         0x00004284   Data         132  led_table.o(.constdata)
-    LED_LIGHT_PARAM                          0x00004308   Data           6  led_table.o(.constdata)
-    tabKB_USBConsumer                        0x0000430e   Data          64  mouse_table.o(.constdata)
-    tabMS_UsageTable                         0x0000434e   Data          16  mouse_table.o(.constdata)
-    tabSensor_DPI                            0x0000435e   Data           4  mouse_table.o(.constdata)
-    srom3389param                            0x00004362   Data        4094  avago_api.o(.constdata)
-    USB_DeviceDescriptor                     0x00005360   Data          18  usbdesc.o(.constdata)
-    HID_ReportDescriptor                     0x00005372   Data          87  usbdesc.o(.constdata)
-    HID_ReportDescSize                       0x000053ca   Data           2  usbdesc.o(.constdata)
-    HID_ReportDescriptor2                    0x000053cc   Data         167  usbdesc.o(.constdata)
-    HID_ReportDescSize2                      0x00005474   Data           2  usbdesc.o(.constdata)
-    HID_ReportDescriptor3                    0x00005476   Data         158  usbdesc.o(.constdata)
-    HID_ReportDescSize3                      0x00005514   Data           2  usbdesc.o(.constdata)
-    USB_ConfigDescriptor                     0x00005516   Data          59  usbdesc.o(.constdata)
-    USB_LanguageStringDescriptor             0x00005551   Data           4  usbdesc.o(.constdata)
-    USB_ManufacturerStringDescriptor         0x00005555   Data          14  usbdesc.o(.constdata)
-    USB_ProductStringDescriptor              0x00005563   Data          60  usbdesc.o(.constdata)
-    USB_SerialNumberStringDescriptor         0x0000559f   Data          10  usbdesc.o(.constdata)
-    DesInfo                                  0x000055ac   Data         180  usbdesc.o(.constdata)
-    firmwareVersion                          0x00005660   Data           4  variables.o(.constdata)
-    dft_special                              0x00005664   Data          28  variables.o(.constdata)
-    dft_generic1                             0x00005680   Data         180  variables.o(.constdata)
-    breathPr                                 0x00005734   Data          18  variables.o(.constdata)
-    Region$$Table$$Base                      0x00005748   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00005768   Number         0  anon$$obj.o(Region$$Table)
+    processVariableUpdate                    0x00003e89   Thumb Code   334  usb_protocol.o(i.processVariableUpdate)
+    requestVariableUpdate                    0x00003ff1   Thumb Code    80  usb_protocol.o(i.requestVariableUpdate)
+    sensorPowerUp                            0x00004049   Thumb Code    90  avago_api.o(i.sensorPowerUp)
+    setResolution                            0x000040b1   Thumb Code    84  mouse_sensor.o(i.setResolution)
+    spiChecksum_SROM                         0x00004105   Thumb Code   150  avago_api.o(i.spiChecksum_SROM)
+    spiDownload_SROM                         0x000041a9   Thumb Code    58  avago_api.o(i.spiDownload_SROM)
+    updateSensorFirmware                     0x000041ed   Thumb Code    92  avago_api.o(i.updateSensorFirmware)
+    RandomColor                              0x000042f4   Data          64  led_table.o(.constdata)
+    LED_BREATH_TABLE                         0x00004334   Data         132  led_table.o(.constdata)
+    LED_LIGHT_PARAM                          0x000043b8   Data           6  led_table.o(.constdata)
+    tabKB_USBConsumer                        0x000043be   Data          64  mouse_table.o(.constdata)
+    tabMS_UsageTable                         0x000043fe   Data          16  mouse_table.o(.constdata)
+    tabSensor_DPI                            0x0000440e   Data           4  mouse_table.o(.constdata)
+    srom3389param                            0x00004412   Data        4094  avago_api.o(.constdata)
+    USB_DeviceDescriptor                     0x00005410   Data          18  usbdesc.o(.constdata)
+    HID_ReportDescriptor                     0x00005422   Data          87  usbdesc.o(.constdata)
+    HID_ReportDescSize                       0x0000547a   Data           2  usbdesc.o(.constdata)
+    HID_ReportDescriptor2                    0x0000547c   Data         167  usbdesc.o(.constdata)
+    HID_ReportDescSize2                      0x00005524   Data           2  usbdesc.o(.constdata)
+    HID_ReportDescriptor3                    0x00005526   Data         158  usbdesc.o(.constdata)
+    HID_ReportDescSize3                      0x000055c4   Data           2  usbdesc.o(.constdata)
+    USB_ConfigDescriptor                     0x000055c6   Data          59  usbdesc.o(.constdata)
+    USB_LanguageStringDescriptor             0x00005601   Data           4  usbdesc.o(.constdata)
+    USB_ManufacturerStringDescriptor         0x00005605   Data          14  usbdesc.o(.constdata)
+    USB_ProductStringDescriptor              0x00005613   Data          60  usbdesc.o(.constdata)
+    USB_SerialNumberStringDescriptor         0x0000564f   Data          10  usbdesc.o(.constdata)
+    DesInfo                                  0x0000565c   Data         180  usbdesc.o(.constdata)
+    firmwareVersion                          0x00005710   Data           4  variables.o(.constdata)
+    dft_special                              0x00005714   Data          28  variables.o(.constdata)
+    dft_generic1                             0x00005730   Data         185  variables.o(.constdata)
+    breathPr                                 0x000057e9   Data          18  variables.o(.constdata)
+    dpiTable                                 0x000057fb   Data          49  variables.o(.constdata)
+    Region$$Table$$Base                      0x0000582c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x0000584c   Number         0  anon$$obj.o(Region$$Table)
     wLED_RandomValue                         0x20000000   Data           4  led_ramsetting.o(.data)
     wLED_RandomValue_N_1                     0x20000004   Data           4  led_ramsetting.o(.data)
     wLED_RandomValue_N_2                     0x20000008   Data           4  led_ramsetting.o(.data)
@@ -1423,22 +1424,23 @@ Image Symbol Table
     pollingTimer                             0x200000ef   Data           1  variables.o(.data)
     sensor_X                                 0x200000f0   Data           2  variables.o(.data)
     sensor_Y                                 0x200000f2   Data           2  variables.o(.data)
-    pollingChange                            0x200000f4   Data           1  variables.o(.data)
-    blinkCount                               0x200000f5   Data           1  variables.o(.data)
-    SystemCoreClock                          0x200000f8   Data           4  system_sn32f240b.o(.data)
-    b_aryLED_LEDM2StepCx                     0x200000fc   Data          21  led_ramsetting.o(.bss)
-    unionLED_Profile                         0x20000114   Data          64  led_ramsetting.o(.bss)
-    bReload_MR                               0x20000154   Data          18  led_ramsetting.o(.bss)
-    b_arySPI_Rx_Fifo                         0x20000166   Data          12  mouse_ramsetting.o(.bss)
-    wUSB_EPnOffset                           0x20000174   Data          16  usbram.o(.bss)
-    wUSB_EPnPacketsize                       0x20000184   Data          20  usbram.o(.bss)
-    sUSB_EumeData                            0x20000198   Data          20  usbram.o(.bss)
-    sHID_Data                                0x200001ac   Data          88  hidram.o(.bss)
-    protocolTransmit                         0x20000204   Data          64  variables.o(.bss)
-    sys                                      0x20000244   Data          28  variables.o(.bss)
-    ram                                      0x20000260   Data         180  variables.o(.bss)
-    __libspace_start                         0x20000314   Data          96  libspace.o(.bss)
-    __temporary_stack_top$libspace           0x20000374   Data           0  libspace.o(.bss)
+    dpiCurrent                               0x200000f4   Data           4  variables.o(.data)
+    pollingChange                            0x200000f8   Data           1  variables.o(.data)
+    blinkCount                               0x200000f9   Data           1  variables.o(.data)
+    SystemCoreClock                          0x200000fc   Data           4  system_sn32f240b.o(.data)
+    b_aryLED_LEDM2StepCx                     0x20000100   Data          21  led_ramsetting.o(.bss)
+    unionLED_Profile                         0x20000118   Data          64  led_ramsetting.o(.bss)
+    bReload_MR                               0x20000158   Data          18  led_ramsetting.o(.bss)
+    b_arySPI_Rx_Fifo                         0x2000016a   Data          12  mouse_ramsetting.o(.bss)
+    wUSB_EPnOffset                           0x20000178   Data          16  usbram.o(.bss)
+    wUSB_EPnPacketsize                       0x20000188   Data          20  usbram.o(.bss)
+    sUSB_EumeData                            0x2000019c   Data          20  usbram.o(.bss)
+    sHID_Data                                0x200001b0   Data          88  hidram.o(.bss)
+    protocolTransmit                         0x20000208   Data          64  variables.o(.bss)
+    sys                                      0x20000248   Data          28  variables.o(.bss)
+    ram                                      0x20000264   Data         185  variables.o(.bss)
+    __libspace_start                         0x20000320   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x20000380   Data           0  libspace.o(.bss)
 
 
 
@@ -1448,9 +1450,9 @@ Memory Map of the image
 
   Image Entry point : 0x000000c1
 
-  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00005864, Max: 0x0000f800, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x0000594c, Max: 0x0000f800, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00005768, Max: 0x0000f800, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x0000584c, Max: 0x0000f800, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1665,24 +1667,23 @@ Memory Map of the image
     0x00003a9c   0x000002d8   Code   RO         1728    i.processDeviceInfoCommand  usb_protocol.o
     0x00003d74   0x000000c0   Code   RO         1729    i.processLedCommand  usb_protocol.o
     0x00003e34   0x00000054   Code   RO         1730    i.processPendingCommand  usb_protocol.o
-    0x00003e88   0x000000b8   Code   RO         1731    i.processVariableUpdate  usb_protocol.o
-    0x00003f40   0x00000058   Code   RO         1733    i.requestVariableUpdate  usb_protocol.o
-    0x00003f98   0x00000068   Code   RO          779    i.sensorPowerUp     avago_api.o
-    0x00004000   0x00000054   Code   RO          708    i.setResolution     mouse_sensor.o
-    0x00004054   0x000000a4   Code   RO          781    i.spiChecksum_SROM  avago_api.o
-    0x000040f8   0x00000044   Code   RO          782    i.spiDownload_SROM  avago_api.o
-    0x0000413c   0x00000068   Code   RO          783    i.updateSensorFirmware  avago_api.o
-    0x000041a4   0x000000a0   Data   RO          269    .constdata          led.o
-    0x00004244   0x000000ca   Data   RO          473    .constdata          led_table.o
-    0x0000430e   0x00000054   Data   RO          755    .constdata          mouse_table.o
-    0x00004362   0x00000ffe   Data   RO          784    .constdata          avago_api.o
-    0x00005360   0x00000300   Data   RO          963    .constdata          usbdesc.o
-    0x00005660   0x000000e6   Data   RO         1692    .constdata          variables.o
-    0x00005746   0x00000002   PAD
-    0x00005748   0x00000020   Data   RO         2078    Region$$Table       anon$$obj.o
+    0x00003e88   0x00000168   Code   RO         1731    i.processVariableUpdate  usb_protocol.o
+    0x00003ff0   0x00000058   Code   RO         1733    i.requestVariableUpdate  usb_protocol.o
+    0x00004048   0x00000068   Code   RO          779    i.sensorPowerUp     avago_api.o
+    0x000040b0   0x00000054   Code   RO          708    i.setResolution     mouse_sensor.o
+    0x00004104   0x000000a4   Code   RO          781    i.spiChecksum_SROM  avago_api.o
+    0x000041a8   0x00000044   Code   RO          782    i.spiDownload_SROM  avago_api.o
+    0x000041ec   0x00000068   Code   RO          783    i.updateSensorFirmware  avago_api.o
+    0x00004254   0x000000a0   Data   RO          269    .constdata          led.o
+    0x000042f4   0x000000ca   Data   RO          473    .constdata          led_table.o
+    0x000043be   0x00000054   Data   RO          755    .constdata          mouse_table.o
+    0x00004412   0x00000ffe   Data   RO          784    .constdata          avago_api.o
+    0x00005410   0x00000300   Data   RO          963    .constdata          usbdesc.o
+    0x00005710   0x0000011c   Data   RO         1692    .constdata          variables.o
+    0x0000582c   0x00000020   Data   RO         2078    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000578, Max: 0x00002000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000580, Max: 0x00002000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1694,19 +1695,19 @@ Memory Map of the image
     0x200000a8   0x00000038   Data   RW         1286    .data               usbram.o
     0x200000e0   0x00000001   Data   RW         1464    .data               hidram.o
     0x200000e1   0x00000001   PAD
-    0x200000e2   0x00000014   Data   RW         1693    .data               variables.o
-    0x200000f6   0x00000002   PAD
-    0x200000f8   0x00000004   Data   RW         1871    .data               system_sn32f240b.o
-    0x200000fc   0x0000006a   Zero   RW          452    .bss                led_ramsetting.o
-    0x20000166   0x0000000c   Zero   RW          683    .bss                mouse_ramsetting.o
-    0x20000172   0x00000002   PAD
-    0x20000174   0x00000038   Zero   RW         1285    .bss                usbram.o
-    0x200001ac   0x00000058   Zero   RW         1463    .bss                hidram.o
-    0x20000204   0x00000110   Zero   RW         1691    .bss                variables.o
-    0x20000314   0x00000060   Zero   RW         1951    .bss                c_p.l(libspace.o)
-    0x20000374   0x00000004   PAD
-    0x20000378   0x00000000   Zero   RW         1858    HEAP                startup_sn32f240b.o
-    0x20000378   0x00000200   Zero   RW         1857    STACK               startup_sn32f240b.o
+    0x200000e2   0x00000018   Data   RW         1693    .data               variables.o
+    0x200000fa   0x00000002   PAD
+    0x200000fc   0x00000004   Data   RW         1871    .data               system_sn32f240b.o
+    0x20000100   0x0000006a   Zero   RW          452    .bss                led_ramsetting.o
+    0x2000016a   0x0000000c   Zero   RW          683    .bss                mouse_ramsetting.o
+    0x20000176   0x00000002   PAD
+    0x20000178   0x00000038   Zero   RW         1285    .bss                usbram.o
+    0x200001b0   0x00000058   Zero   RW         1463    .bss                hidram.o
+    0x20000208   0x00000115   Zero   RW         1691    .bss                variables.o
+    0x2000031d   0x00000003   PAD
+    0x20000320   0x00000060   Zero   RW         1951    .bss                c_p.l(libspace.o)
+    0x20000380   0x00000000   Zero   RW         1858    HEAP                startup_sn32f240b.o
+    0x20000380   0x00000200   Zero   RW         1857    STACK               startup_sn32f240b.o
 
 
 
@@ -1756,19 +1757,19 @@ Image component sizes
        820         54          0          0          0       7679   spi0.o
         48         22        192          0        512        840   startup_sn32f240b.o
        296         54          0          4          0       1351   system_sn32f240b.o
-      1360         92          0          0          0       4896   usb_protocol.o
+      1536         94          0          0          0       5000   usb_protocol.o
          0          0        768          0          0       6292   usbdesc.o
        532         48          0          0          0       2016   usbepfunc.o
       1512        226          0          0          0      13799   usbhw.o
          0          0          0         56         56       1901   usbram.o
       2478        264          0          0          0      12688   usbuser.o
        108         18          0          0          0       1855   utility.o
-         0          0        230         20        272       7710   variables.o
+         0          0        284         24        277       7810   variables.o
 
     ----------------------------------------------------------------------
-     15940       1894       5764        252       1048     169961   Object Totals
+     16116       1896       5816        256       1056     170165   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-         4          0          2          8          2          0   (incl. Padding)
+         4          0          0          8          5          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1798,8 +1799,8 @@ Image component sizes
          2          0          0          0          0         68   use_no_semi.o
 
     ----------------------------------------------------------------------
-       676         16          0          0        100        708   Library Totals
-         8          0          0          0          4          0   (incl. Padding)
+       676         16          0          0         96        708   Library Totals
+         8          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1808,7 +1809,7 @@ Image component sizes
        668         16          0          0         96        708   c_p.l
 
     ----------------------------------------------------------------------
-       676         16          0          0        100        708   Library Totals
+       676         16          0          0         96        708   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -1817,15 +1818,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     16616       1910       5764        252       1148     163733   Grand Totals
-     16616       1910       5764        252       1148     163733   ELF Image Totals
-     16616       1910       5764        252          0          0   ROM Totals
+     16792       1912       5816        256       1152     163937   Grand Totals
+     16792       1912       5816        256       1152     163937   ELF Image Totals
+     16792       1912       5816        256          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                22380 (  21.86kB)
-    Total RW  Size (RW Data + ZI Data)              1400 (   1.37kB)
-    Total ROM Size (Code + RO Data + RW Data)      22632 (  22.10kB)
+    Total RO  Size (Code + RO Data)                22608 (  22.08kB)
+    Total RW  Size (RW Data + ZI Data)              1408 (   1.38kB)
+    Total ROM Size (Code + RO Data + RW Data)      22864 (  22.33kB)
 
 ==============================================================================
 
