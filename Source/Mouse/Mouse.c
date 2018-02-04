@@ -129,21 +129,24 @@ void MS_RamInit(void)
    if ((ram.storageSize != sizeof(ram)) || (ram.crc != crc16((U8 *)&ram, (sizeof(ram)-2)))) {
      memoryCopy(&ram, (void *)&dft_generic1, sizeof(ram));            // copy dft_generic to ram
    }
+   
+   dpiCurrent.x = ram.profile[0].dpiCur.x;
+   dpiCurrent.y = ram.profile[0].dpiCur.y;
 //]  
   
  //[ S check the button upon power on 
   // 1 D Q B F R M L button mapping 
-//  buttons = button_input;
+  buttons = button_input;
      switch (button_input) {
        case 0xE6:             // B+F+L
          pollingChange = 1;
          ram.profile[0].Sensor.pollingRate = 8;
          break;
-       case 0xE5:             // B+F+M 
+       case 0xE5:             // B+F+R 
          pollingChange = 2;
          ram.profile[0].Sensor.pollingRate = 2;
          break;
-       case 0xE3:             // B+F+R
+       case 0xE3:             // B+F+M
          pollingChange = 3;
          ram.profile[0].Sensor.pollingRate = 4;
          break;
